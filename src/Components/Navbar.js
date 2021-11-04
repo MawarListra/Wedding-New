@@ -42,8 +42,8 @@ const Navbar = ({ toggle }) => {
   const [openInput, setOpenInput] = useState(false);
   const [openSubmit, setOpenSubmit] = useState(false);
   const [openScanned, setOpenScanned] = useState(false);
-  const [refreshInterval, setRefreshInterval] = useState(10);
-  const [textTemp, setTextTemp] = useState("0");
+  // const [refreshInterval, setRefreshInterval] = useState(10);
+  // const [textTemp, setTextTemp] = useState("0");
   const handleChange = (e) => {
     const temp = e.target.value;
     if (!isNaN(temp)) {
@@ -102,44 +102,44 @@ const Navbar = ({ toggle }) => {
 
   
   // const ref = useDetectClickOutside({ onTriggered: closeQR })
-  const CekKehadiran = useCallback(() => {
-    let textCek = textQR;
-    console.log(textCek);
-    if (textCek === "0") {
-      console.log("Nomor belum masuk");
-    } else if (textCek !== "0") {
-      axios
-        .get(
-          "https://weddingsk.xyz/v1/User/checkhadir/" + textCek
-        )
-        .then((resp) => {
-          if (typeof resp.data == "object") {
-            // setOpenQR(!openQR)
-            if (resp.data.data != null) {
-              console.log(resp.data.data);
-              setTextTemp(resp.data.data);
-              if (textTemp.toString() === "1") {
-                if (openQR === true) {
-                  setOpenInput(false);
-                  setOpenSubmit(false);
-                  setOpenScanned(true);
-                  setOpenSuccess(false);
-                  setOpenErr(false);
-                } else {
-                  console.log("Hadir");
-                }
-              } else {
-                console.log("Belum Hadir");
-              }
-            } else {
-              console.log("Data null");
-            }
-          } else {
-            console(resp.data.data);
-          }
-        });
-    }
-  }, [textQR, openQR, textTemp]);
+  // const CekKehadiran = useCallback(() => {
+  //   let textCek = textQR;
+  //   console.log(textCek);
+  //   if (textCek === "0") {
+  //     console.log("Nomor belum masuk");
+  //   } else if (textCek !== "0") {
+  //     axios
+  //       .get(
+  //         "https://weddingsk.xyz/v1/User/checkhadir/" + textCek
+  //       )
+  //       .then((resp) => {
+  //         if (typeof resp.data == "object") {
+  //           // setOpenQR(!openQR)
+  //           if (resp.data.data != null) {
+  //             console.log(resp.data.data);
+  //             setTextTemp(resp.data.data);
+  //             if (textTemp.toString() === "1") {
+  //               if (openQR === true) {
+  //                 setOpenInput(false);
+  //                 setOpenSubmit(false);
+  //                 setOpenScanned(true);
+  //                 setOpenSuccess(false);
+  //                 setOpenErr(false);
+  //               } else {
+  //                 console.log("Hadir");
+  //               }
+  //             } else {
+  //               console.log("Belum Hadir");
+  //             }
+  //           } else {
+  //             console.log("Data null");
+  //           }
+  //         } else {
+  //           console(resp.data.data);
+  //         }
+  //       });
+  //   }
+  // }, [textQR, openQR, textTemp]);
 
   useEffect(() => {
     let interval
@@ -179,7 +179,7 @@ const Navbar = ({ toggle }) => {
     return () => {
       clearInterval(interval)
     }
-  }, []);
+  }, [open, textQR]);
   return (
     <div className="flex flex-row md:w-full h-full md:py-12 justify-center font-sansLight">
       <div className="md:flex hidden w-full md:h-20 md:py-5 pb-10 pt-4 justify-center items-center md:px-24">
