@@ -41,13 +41,13 @@ function App() {
   });
   return (
     <div className="overflow-x-hidden">
-      {/* <ModalWelcome toggle={toggleMusic} />
+      <ModalWelcome toggle={toggleMusic} />
       <Sound
         url={Song}
         playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED}
         playFromPosition={300}
         loop={true}
-      /> */}
+      />
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Landing />
