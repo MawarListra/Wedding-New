@@ -6,7 +6,7 @@ import Gambar3 from "../Images/Rectangle 22.png";
 import Gambar4 from "../Images/Rectangle 25.png";
 // import Gambar4Res from "../Images/Rectangle 22(1).png";
 import Gambar5 from "../Images/Rectangle 23.png";
-import Gambar6 from "../Images/unnamed(1)(1).jpg";
+import Gambar6 from "../Images/unnamed.jpg";
 import ModalImage from "react-modal-image";
 
 function Gallery() {
@@ -98,7 +98,7 @@ function Gallery() {
                 large={Gambar6}
                 hideDownload={true}
                 hideZoom={true}
-                className='md:h-64'
+                className='md:h-72 md:w-4/5'
                 // alt="6"
               />
             </div>
