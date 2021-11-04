@@ -186,7 +186,7 @@ function SendingWishes() {
 
             {/* This element is to trick the browser into centering the modal contents. */}
             <span
-              className="inline-block h-screen align-middle"
+              className="hidden lg:inline-block lg:h-screen lg:align-middle"
               aria-hidden="true"
             >
               &#8203;
@@ -200,7 +200,7 @@ function SendingWishes() {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-center align-middle transition-all transform bg-white shadow-xl rounded-2xl shadow-2xl">
+              <div className="inline-block md:w-full max-w-md p-6 my-8 overflow-hidden text-center align-middle transition-all transform bg-white shadow-xl rounded-2xl shadow-2xl">
                 <Dialog.Title
                   as="h3"
                   className="md:text-lg text-sm font-medium leading-6 text-gray-900"

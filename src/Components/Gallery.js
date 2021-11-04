@@ -98,7 +98,7 @@ function Gallery() {
                 large={Gambar6}
                 hideDownload={true}
                 hideZoom={true}
-                className='h-64 bg-contain'
+                className='md:h-64'
                 // alt="6"
               />
             </div>
