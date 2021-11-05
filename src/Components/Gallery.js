@@ -98,7 +98,7 @@ function Gallery() {
                 large={Gambar6}
                 hideDownload={true}
                 hideZoom={true}
-                className='md:h-72 md:w-4/5'
+                className='md:h-281 md:w-4/5'
                 // alt="6"
               />
             </div>

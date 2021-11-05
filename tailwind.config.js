@@ -24,7 +24,8 @@ module.exports = {
         'cardH' : '360px',
         'hero' : '686px',
         'groom' : '198px',
-        'location' : '418px'
+        'location' : '418px',
+        '281' : '281px'
       },
       backgroundImage: {
         'landing-image' : "url('Images/LandingPage.png')",
