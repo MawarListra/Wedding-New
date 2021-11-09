@@ -15,7 +15,7 @@ function Footer() {
       <div className="md:hidden flex w-screen h-80 justify-center items-center text-white space-y-8 bg-footerRes-image bg-cover bg-center bg-no-repeat ">
         <div className="flex flex-col w-auto h-auto justify-center items-center spacing mt-8">
           <h1 className="font-sansLight text-xs">Salam Hangat Dari Kami,</h1>
-          <h1 className="font-script text-lg">Sara & Kevin</h1>
+          <h1 className="font-script text-lg">Sara & Kelvin</h1>
         </div>
       </div>
     </div>

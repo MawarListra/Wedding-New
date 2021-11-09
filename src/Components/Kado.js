@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 function Kado() {
-  let value = "0382146210";
+  let value = "8020339765";
   // const [value, setValue] = useState('');
   // setValue('0382146210')
   const [copied, setCopied] = useState(false);
@@ -30,7 +30,7 @@ function Kado() {
           Kelvin Eka Pramudita
         </text>
         <text className="font-sans md:text-lg text-sm text-white">
-          AC : 0382146210
+          AC : 8020339765
         </text>
         <text className="font-sans md:text-lg text-sm text-white">
           Bank Central Asia (BCA)
